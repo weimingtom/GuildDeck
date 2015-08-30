@@ -1,0 +1,17 @@
+﻿2015/08/30 20:06:23 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\uemura\Documents\GitHub\GuildDeck\GuildDeck\GuildDeck.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\uemura\Documents\GitHub\SDXFramework /IC:\Users\uemura\Documents\GitHub\SDXFramework\SDL2\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\uemura\Documents\GitHub\GuildDeck\Debug\GuildDeck.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\uemura\Documents\GitHub\SDXFramework\SDL2\lib\x86 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\uemura\Documents\GitHub\GuildDeck\Debug\GuildDeck.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\uemura\Documents\GitHub\GuildDeck\Debug\GuildDeck.lib" /MACHINE:X86 Debug\main.obj
+     1>LIBCMTD.lib(initializers.obj) : warning LNK4098: defaultlib 'msvcrtd.lib' は他のライブラリの使用と競合しています。/NODEFAULTLIB:library を使用してください。
+     1>SDL2main_2015.lib(SDL_windows_main.obj) : warning LNK4217: ローカルで定義されたシンボル ___acrt_iob_func がフィクション _ShowError にインポートされました。
+     1>SDL2main_2015.lib(SDL_windows_main.obj) : warning LNK4217: ローカルで定義されたシンボル ___stdio_common_vfprintf がフィクション __vfprintf_l にインポートされました。
+     1>SDL2main_2015.lib(SDL_windows_main.obj) : warning LNK4217: ローカルで定義されたシンボル _exit がフィクション _main にインポートされました。
+         GuildDeck.vcxproj -> C:\Users\uemura\Documents\GitHub\GuildDeck\Debug\GuildDeck.exe
+     1>プロジェクト "C:\Users\uemura\Documents\GitHub\GuildDeck\GuildDeck\GuildDeck.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:04.65
