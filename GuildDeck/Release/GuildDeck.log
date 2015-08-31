@@ -1,0 +1,13 @@
+﻿2015/08/31 9:40:52 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\Uemura\Documents\GitHub\GuildDeck\GuildDeck\GuildDeck.vcxproj" (Build ターゲット)。
+     1>Link:
+         C:\Program Files\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Uemura\Documents\GitHub\GuildDeck\Release\GuildDeck.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\uemura\Documents\GitHub\SDXFramework\SDL2\lib\x86 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Uemura\Documents\GitHub\GuildDeck\Release\GuildDeck.pdb" /SUBSYSTEM:WINDOWS,"5.01" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Uemura\Documents\GitHub\GuildDeck\Release\GuildDeck.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         コード生成しています。
+         All 901 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         コード生成が終了しました。
+         GuildDeck.vcxproj -> C:\Users\Uemura\Documents\GitHub\GuildDeck\Release\GuildDeck.exe
+     1>プロジェクト "C:\Users\Uemura\Documents\GitHub\GuildDeck\GuildDeck\GuildDeck.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:45.43

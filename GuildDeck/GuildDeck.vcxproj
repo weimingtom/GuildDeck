@@ -157,6 +157,22 @@
       <RuntimeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MultiThreaded</RuntimeLibrary>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\Quest.h" />
+    <ClInclude Include="Game\Unit.h" />
+    <ClInclude Include="Struct\QuestData.h" />
+    <ClInclude Include="Struct\JobData.h" />
+    <ClInclude Include="Struct\LogData.h" />
+    <ClInclude Include="Struct\ReplayData.h" />
+    <ClInclude Include="System\EnumType.h" />
+    <ClInclude Include="System\GDSystem.h" />
+    <ClInclude Include="System\Material.h" />
+    <ClInclude Include="System\SaveAndLoad.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Document\Todo.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" nextobjectid="377">
+ <objectgroup color="#00ffff" name="TEMPLATE">
+  <object id="16" name="ScrollBar" type="ScrollBar" x="306.5" y="496" width="57" height="54">
+   <properties>
+    <property name="frameNo" value="int"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="2" name="Frame" type="Frame" x="126" y="500" width="57" height="54">
+   <properties>
+    <property name="frameNo" value="int"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value=""/>
+   </properties>
+  </object>
+  <object id="15" name="Text" type="Text" x="50.5" y="501" width="57" height="54">
+   <properties>
+    <property name="fontNo" value="int"/>
+    <property name="text" value="std::string"/>
+    <property name="~Draw" value="MFont::fontS[@fontNo].DrawRotate(@rect.GetCenter(),1,0,Color::White,@text);"/>
+    <property name="~Final" value=""/>
+    <property name="~Init" value=""/>
+    <property name="~Update" value=""/>
+   </properties>
+  </object>
+  <object id="256" name="Button" type="Button" x="220.5" y="498" width="57" height="54">
+   <properties>
+    <property name="frameNo" value="int"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffffff" draworder="index" name="SceneData" visible="0">
+  <object id="65" name="難易度情報" type="Frame" x="62" y="258" width="300" height="216">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="29" name="ステージ一覧" type="Frame" x="362" y="258" width="276" height="154">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="30" name="開始" type="Button" x="365" y="414" width="272" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="60" name="難易度－" type="Button" x="83" y="266.5" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="61" name="難易度＋" type="Button" x="302" y="266.5" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="63" name="ウィッチ一覧" type="Frame" x="62" y="2" width="300" height="256">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="64" name="マップ情報" type="Frame" x="362" y="2" width="276" height="256">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="107" name="面数Minus" type="Button" x="368" y="263" width="40" height="144">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="109" name="ステージA" type="Button" x="415" y="264" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="110" name="ステージB" type="Button" x="415" y="300.5" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="111" name="ステージC" type="Button" x="415" y="336.5" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="112" name="ステージD" type="Button" x="415" y="372.5" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="113" name="面数Plus" type="Button" x="592" y="263" width="40" height="144">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="114" name="難易度" type="Frame" x="128.5" y="266" width="167" height="40">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="115" name="Wave数" type="Text" x="250.5" y="349" width="60" height="25">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="25 Wave"/>
+   </properties>
+  </object>
+  <object id="116" name="出現数" type="Text" x="251.5" y="379.5" width="60" height="25">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="敵数 1.2倍"/>
+   </properties>
+  </object>
+  <object id="117" name="HP補正" type="Text" x="251.5" y="409.5" width="60" height="24">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="HP　1.2倍"/>
+   </properties>
+  </object>
+  <object id="118" name="Lv補正" type="Text" x="252" y="439" width="60" height="24">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="LV 1.5倍"/>
+   </properties>
+  </object>
+  <object id="119" name="ウィッチアイコン" type="Frame" x="68.5" y="32" width="20" height="20">
+   <properties>
+    <property name="frameNo" value="0"/>
+   </properties>
+  </object>
+  <object id="31" name="シングル_カップル" type="Button" x="213" y="311" width="130" height="30">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="59" name="スキル" type="Button" x="83" y="311" width="130" height="30">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="121" name="ウィッチ名" type="Text" x="96" y="32" width="56" height="20">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="std::string"/>
+   </properties>
+  </object>
+  <object id="122" name="星" type="Text" x="155" y="31" width="21" height="21">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="std::string"/>
+   </properties>
+  </object>
+  <object id="123" name="スコア" type="Text" x="278" y="32" width="30" height="22">
+   <properties>
+    <property name="fontNo" value="2"/>
+    <property name="text" value="std::string"/>
+   </properties>
+  </object>
+  <object id="240" name="ハイスコア" type="Text" x="64" y="9" width="126" height="22">
+   <properties>
+    <property name="fontNo" value="2"/>
+    <property name="text" value="Hi Score"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffffff" draworder="index" name="SceneMain" visible="0">
+  <object id="352" name="難易度情報" type="Frame" x="62" y="258" width="300" height="216">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="353" name="ステージ一覧" type="Frame" x="362" y="258" width="276" height="154">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="354" name="開始" type="Button" x="365" y="414" width="272" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="355" name="難易度－" type="Button" x="83" y="266.5" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="356" name="難易度＋" type="Button" x="302" y="266.5" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="357" name="ウィッチ一覧" type="Frame" x="62" y="2" width="300" height="256">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="358" name="マップ情報" type="Frame" x="362" y="2" width="276" height="256">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="359" name="面数Minus" type="Button" x="368" y="263" width="40" height="144">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="360" name="ステージA" type="Button" x="415" y="264" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="361" name="ステージB" type="Button" x="415" y="300.5" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="362" name="ステージC" type="Button" x="415" y="336.5" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="363" name="ステージD" type="Button" x="415" y="372.5" width="170" height="36">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="364" name="面数Plus" type="Button" x="592" y="263" width="40" height="144">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="365" name="難易度" type="Frame" x="128.5" y="266" width="167" height="40">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="366" name="Wave数" type="Text" x="250.5" y="349" width="60" height="25">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="25 Wave"/>
+   </properties>
+  </object>
+  <object id="367" name="出現数" type="Text" x="251.5" y="379.5" width="60" height="25">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="敵数 1.2倍"/>
+   </properties>
+  </object>
+  <object id="368" name="HP補正" type="Text" x="251.5" y="409.5" width="60" height="24">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="HP　1.2倍"/>
+   </properties>
+  </object>
+  <object id="369" name="Lv補正" type="Text" x="252" y="439" width="60" height="24">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="LV 1.5倍"/>
+   </properties>
+  </object>
+  <object id="370" name="ウィッチアイコン" type="Frame" x="68.5" y="32" width="20" height="20">
+   <properties>
+    <property name="frameNo" value="0"/>
+   </properties>
+  </object>
+  <object id="371" name="シングル_カップル" type="Button" x="213" y="311" width="130" height="30">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="372" name="スキル" type="Button" x="83" y="311" width="130" height="30">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="373" name="ウィッチ名" type="Text" x="96" y="32" width="56" height="20">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="std::string"/>
+   </properties>
+  </object>
+  <object id="374" name="星" type="Text" x="155" y="31" width="21" height="21">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="std::string"/>
+   </properties>
+  </object>
+  <object id="375" name="スコア" type="Text" x="278" y="32" width="30" height="22">
+   <properties>
+    <property name="fontNo" value="2"/>
+    <property name="text" value="std::string"/>
+   </properties>
+  </object>
+  <object id="376" name="ハイスコア" type="Text" x="64" y="9" width="126" height="22">
+   <properties>
+    <property name="fontNo" value="2"/>
+    <property name="text" value="Hi Score"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneConfig" visible="0">
+  <object id="90" name="効果音＋" type="Button" x="555.5" y="25" width="60" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="91" name="効果音－" type="Button" x="286.5" y="25" width="60" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="92" name="BGM－" type="Button" x="286" y="125.5" width="60" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="93" name="BGM＋" type="Button" x="555" y="126.5" width="60" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="94" name="グリッド" type="Frame" x="95.5" y="210" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="95" name="敵HP" type="Frame" x="365.5" y="210" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="96" name="エフェクト表示" type="Frame" x="365.5" y="280" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="97" name="タッチ操作" type="Frame" x="95.5" y="280" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="98" name="リプレイ保存" type="Frame" x="365.5" y="350" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="100" name="効果音" type="Text" x="114.5" y="40" width="120" height="30">
+   <properties>
+    <property name="fontNo" value="3"/>
+    <property name="text" value="Sound Volume"/>
+   </properties>
+  </object>
+  <object id="102" name="BGMゲージ" type="Frame" x="350.5" y="126" width="200" height="61">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="103" name="効果音ゲージ" type="Frame" x="350.5" y="24" width="200" height="60">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="124" name="初期配置" type="Frame" x="95.5" y="350.5" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="227" name="グリッドChk" type="Button" x="100.5" y="215" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="229" name="敵HPChk" type="Button" x="370" y="215" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="230" name="エフェクト表示Chk" type="Button" x="370" y="285" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="231" name="リプレイ保存Chk" type="Button" x="370" y="355" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="232" name="タッチ操作Chk" type="Button" x="100" y="285" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="233" name="初期配置Chk" type="Button" x="100" y="355" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="234" name="BGM" type="Text" x="126.5" y="140.5" width="100" height="30">
+   <properties>
+    <property name="fontNo" value="3"/>
+    <property name="text" value="BGM Volume"/>
+   </properties>
+  </object>
+  <object id="251" name="画面サイズ" type="Frame" x="95" y="420" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="252" name="画面サイズChk" type="Button" x="100" y="425" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="254" name="おまけChk" type="Button" x="370" y="425" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="255" name="おまけ" type="Frame" x="365" y="420" width="240" height="50">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneArchive" visible="0">
+  <object id="285" name="項目枠1" type="Frame" x="64" y="64" width="280" height="409">
+   <properties>
+    <property name="frameNo" value="5"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value=""/>
+   </properties>
+  </object>
+  <object id="291" name="タブ0" type="Button" x="64" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="293" name="項目枠2" type="Frame" x="350" y="64" width="280" height="409">
+   <properties>
+    <property name="frameNo" value="5"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value=""/>
+   </properties>
+  </object>
+  <object id="295" name="タブ1" type="Button" x="121" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="296" name="タブ2" type="Button" x="178" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="297" name="タブ3" type="Button" x="235" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="299" name="タブ5" type="Button" x="349" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="300" name="タブ6" type="Button" x="406" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="301" name="タブ4" type="Button" x="292" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="302" name="タブ7" type="Button" x="463" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="305" name="タブ8" type="Button" x="520" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="306" name="タブ9" type="Button" x="577" y="3" width="55" height="55">
+   <properties>
+    <property name="frameNo" value="3"/>
+    <property name="~Draw" value="MSystem::frameS[@frameNo].Draw(@rect);"/>
+    <property name="~Update" value="if(@isClick()){}"/>
+   </properties>
+  </object>
+  <object id="307" name="ランクアイコン" type="Text" x="305.5" y="75" width="31.5" height="23">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="std::string"/>
+    <property name="~Draw" value="MFont::fontS[@fontNo].DrawRotate(@rect.GetCenter(),1,0,Color::White,@text);"/>
+    <property name="~Final" value=""/>
+    <property name="~Init" value=""/>
+    <property name="~Update" value=""/>
+   </properties>
+  </object>
+  <object id="332" name="項目名" type="Text" x="76" y="75" width="103" height="23">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="std::string"/>
+    <property name="~Draw" value="MFont::fontS[@fontNo].DrawRotate(@rect.GetCenter(),1,0,Color::White,@text);"/>
+    <property name="~Final" value=""/>
+    <property name="~Init" value=""/>
+    <property name="~Update" value=""/>
+   </properties>
+  </object>
+  <object id="333" name="記録" type="Text" x="232" y="75" width="40" height="23">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="std::string"/>
+    <property name="~Draw" value="MFont::fontS[@fontNo].DrawRotate(@rect.GetCenter(),1,0,Color::White,@text);"/>
+    <property name="~Final" value=""/>
+    <property name="~Init" value=""/>
+    <property name="~Update" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneHelp" visible="0">
+  <object id="125" name="項目1" type="Button" x="66" y="8" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="320" name="項目11" type="Button" x="356" y="8" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="334" name="項目2" type="Button" x="66" y="55" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="335" name="項目3" type="Button" x="66" y="102" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="336" name="項目4" type="Button" x="66" y="149" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="337" name="項目5" type="Button" x="66.5" y="196" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="338" name="項目6" type="Button" x="66.5" y="243" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="339" name="項目8" type="Button" x="66.5" y="338" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="340" name="項目7" type="Button" x="66.5" y="290" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="341" name="項目9" type="Button" x="66" y="385" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="342" name="項目10" type="Button" x="66" y="431" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="343" name="項目12" type="Button" x="356.75" y="55" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="344" name="項目20" type="Button" x="356.75" y="431" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="345" name="項目19" type="Button" x="356.75" y="385" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="346" name="項目15" type="Button" x="357.25" y="196" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="347" name="項目14" type="Button" x="356.75" y="149" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="348" name="項目17" type="Button" x="357.25" y="290" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="349" name="項目18" type="Button" x="357.25" y="338" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="350" name="項目13" type="Button" x="356.75" y="102" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="351" name="項目16" type="Button" x="357.25" y="243" width="280" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneReplay" visible="0">
+  <object id="127" name="リプレイ情報" type="Frame" x="362" y="302" width="276" height="110">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="128" name="開始" type="Button" x="365" y="414" width="272" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="129" name="スコア" type="Text" x="510" y="390" width="100" height="15">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="score"/>
+   </properties>
+  </object>
+  <object id="132" name="スクロールバー" type="ScrollBar" x="320" y="52" width="36" height="374">
+   <properties>
+    <property name="frameNo" value="4"/>
+   </properties>
+  </object>
+  <object id="133" name="マップ情報" type="Frame" x="362" y="2" width="276" height="300">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="135" name="リプレイ選択" type="Button" x="67.5" y="9" width="248" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="139" name="ウィッチ" type="Text" x="535" y="330.5" width="50" height="15">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="std::string"/>
+   </properties>
+  </object>
+  <object id="142" name="トライアル" type="Text" x="510" y="310" width="50" height="15">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Difficulty"/>
+   </properties>
+  </object>
+  <object id="144" name="結果" type="Text" x="510" y="370" width="100" height="15">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Perfect"/>
+   </properties>
+  </object>
+  <object id="145" name="ステージ一覧" type="Frame" x="62" y="2" width="300" height="476">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="146" name="下スクロール" type="Button" x="318" y="434.5" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="148" name="上スクロール" type="Button" x="318" y="6.5" width="40" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="246" name="難易度" type="Text" x="510" y="350" width="100" height="15">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Difficulty"/>
+   </properties>
+  </object>
+  <object id="248" name="カップル" type="Text" x="560" y="310" width="50" height="15">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Difficulty"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneGame" visible="0">
+  <object id="162" name="攻撃" type="Button" x="85" y="6" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="175" name="リセット" type="Button" x="445.5" y="442" width="170" height="32">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="177" name="レベル" type="Frame" x="85" y="442" width="170" height="32">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="178" name="残りポイント" type="Frame" x="265.5" y="442" width="170" height="32">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="179" name="拡散" type="Button" x="175" y="6" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="180" name="防壊" type="Button" x="265" y="6" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="181" name="節約" type="Button" x="355" y="6" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="182" name="対獣" type="Button" x="445" y="6" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="183" name="対闇" type="Button" x="535" y="6" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="190" name="対人" type="Button" x="445" y="86.5" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="191" name="対竜" type="Button" x="535" y="86.5" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="192" name="連射" type="Button" x="85" y="86.5" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="193" name="体力" type="Button" x="355" y="86.5" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="194" name="麻痺" type="Button" x="175" y="86.5" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="195" name="回収" type="Button" x="265" y="86.5" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="196" name="幸運" type="Button" x="535" y="166" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="197" name="射程" type="Button" x="85" y="166" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="198" name="対水" type="Button" x="445" y="166" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="199" name="鈍足" type="Button" x="175" y="166.5" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="200" name="魔力" type="Button" x="355" y="166" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="201" name="強化" type="Button" x="265" y="166" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="202" name="吹飛" type="Button" x="175" y="246" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="203" name="必殺" type="Button" x="355" y="246" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="204" name="試練" type="Button" x="535" y="246" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="205" name="対樹" type="Button" x="445" y="246" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="206" name="支援" type="Button" x="85" y="246" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="207" name="逆境" type="Button" x="265" y="246" width="80" height="70">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="209" name="スキル説明" type="Frame" x="85" y="324" width="528" height="108">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneResult" visible="0">
+  <object id="83" name="リプレイ保存" type="Button" x="121.5" y="384" width="120" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="84" name="リトライ" type="Button" x="258.5" y="384" width="120" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="85" name="終了" type="Button" x="398.5" y="384" width="120" height="60">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="86" name="全体枠" type="Frame" x="80" y="10" width="480" height="460">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="87" name="Result" type="Frame" x="100" y="30" width="440" height="40">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="151" name="最終スコア" type="Text" x="225.5" y="237" width="196" height="30">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Total Score"/>
+   </properties>
+  </object>
+  <object id="153" name="撃破スコア" type="Text" x="253" y="83" width="146" height="30">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Score"/>
+   </properties>
+  </object>
+  <object id="154" name="難易度補正" type="Text" x="250" y="130" width="146" height="30">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Difficulty Bonus"/>
+   </properties>
+  </object>
+  <object id="155" name="体力補正" type="Text" x="249" y="175.5" width="146" height="30">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Life Bonus"/>
+   </properties>
+  </object>
+  <object id="156" name="獲得経験値" type="Text" x="224" y="286" width="196" height="30">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="Get EXP"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneStory" visible="0">
+  <object id="106" name="実装中～" type="Text" x="300" y="200" width="100" height="100">
+   <properties>
+    <property name="fontNo" value="1"/>
+    <property name="text" value="次のバージョンまで待ってて"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneMode" visible="0">
+  <object id="210" name="全体枠" type="Frame" x="170" y="60" width="360" height="360">
+   <properties>
+    <property name="frameNo" value="5"/>
+   </properties>
+  </object>
+  <object id="211" name="ライナ" type="Button" x="195.5" y="83" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="212" name="決定" type="Button" x="185" y="363" width="160" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+  <object id="213" name="ルコウ" type="Button" x="195" y="127" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="216" name="ロチエ" type="Button" x="195" y="215" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="217" name="ミナエ" type="Button" x="195" y="171" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="218" name="委員長" type="Button" x="195" y="303" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="219" name="フィオナ" type="Button" x="195" y="259" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="220" name="ディアネラ" type="Button" x="366.75" y="127" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="221" name="トレニア" type="Button" x="366.75" y="171" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="222" name="ミルラ" type="Button" x="366.75" y="303" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="223" name="バロゥ" type="Button" x="366.75" y="215" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="224" name="ナズナ" type="Button" x="366.75" y="259" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="225" name="ナツメ" type="Button" x="367.25" y="83" width="140" height="40">
+   <properties>
+    <property name="frameNo" value="1"/>
+   </properties>
+  </object>
+  <object id="244" name="キャンセル" type="Button" x="356" y="363" width="160" height="40">
+   <properties>
+    <property name="frameNo" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="SceneTitle" visible="0">
+  <object id="88" name="題字" type="Text" x="159.5" y="134" width="356" height="78">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="ぐらちTD(仮)"/>
+   </properties>
+  </object>
+  <object id="89" name="押して下さい" type="Text" x="291.5" y="316" width="77" height="39">
+   <properties>
+    <property name="fontNo" value="0"/>
+    <property name="text" value="push any key"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
