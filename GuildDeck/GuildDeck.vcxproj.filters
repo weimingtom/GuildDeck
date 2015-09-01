@@ -60,6 +60,12 @@
     <ClInclude Include="Game\Quest.h">
       <Filter>3.Game</Filter>
     </ClInclude>
+    <ClInclude Include="Game\Enemy.h">
+      <Filter>3.Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct\EnemyData.h">
+      <Filter>2.Struct</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Document\Todo.txt">

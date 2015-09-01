@@ -158,9 +158,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Game\Enemy.h" />
     <ClInclude Include="Game\Game.h" />
     <ClInclude Include="Game\Quest.h" />
     <ClInclude Include="Game\Unit.h" />
+    <ClInclude Include="Struct\EnemyData.h" />
     <ClInclude Include="Struct\QuestData.h" />
     <ClInclude Include="Struct\JobData.h" />
     <ClInclude Include="Struct\LogData.h" />

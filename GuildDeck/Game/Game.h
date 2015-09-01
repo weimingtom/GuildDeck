@@ -8,5 +8,9 @@ namespace GD
 {
 	using namespace SDX;
 
+	class Game
+	{
+
+	};
 
 }

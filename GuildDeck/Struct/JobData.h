@@ -12,9 +12,20 @@ namespace GD
 	{
 		JobType í—Ş;
 		AttackType UŒ‚‘®«;
+		std::string –¼‘O;
+		std::string à–¾•¶;
 		int Šî‘b‘Ì—Í;
 		int Šî‘bUŒ‚—Í;
 
 
 	};
+
+
+	EnumArray<JobData, JobType> JobDataS;
+
+	bool LoadJobS()
+	{
+		return false;
+	}
+
 }

@@ -9,8 +9,8 @@
 namespace GD
 {
 	using namespace SDX;
-	/*冒険者クラス*/
-	class Unit
+	/*冒険者の共通基底クラス*/
+	class IUnit
 	{
 	public:
 		JobType 職種;//変動しないパラメータは職業を参照

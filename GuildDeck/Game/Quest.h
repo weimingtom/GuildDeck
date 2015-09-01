@@ -3,11 +3,15 @@
 //[Contact] http://tacoika.blog87.fc2.com/
 #pragma once
 #include <SDXFramework.h>
+#include "../Struct/JobData.h"
+#include "../System/EnumType.h"
 
 namespace GD
 {
 	using namespace SDX;
-	class Quest
+
+	/*クエストの共通基底クラス*/
+	class IQuest
 	{
 	public:
 		int 期日;
