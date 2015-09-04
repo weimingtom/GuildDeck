@@ -66,10 +66,66 @@
     <ClInclude Include="Struct\EnemyData.h">
       <Filter>2.Struct</Filter>
     </ClInclude>
+    <ClInclude Include="Scene\SceneStory.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneResult.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneReplay.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneMode.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneMain.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneHelp.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneGame.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneData.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneConfig.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneArchive.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GUI_Factory.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\UI_Text.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\UI_ScrollBar.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\UI_Frame.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\UI_Enum.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\UI_Button.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneTitle.h">
+      <Filter>4.Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Document\Todo.txt">
       <Filter>5.Document</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scene\Layout.tmx">
+      <Filter>4.Scene</Filter>
+    </None>
   </ItemGroup>
 </Project>

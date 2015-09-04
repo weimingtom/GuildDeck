@@ -20,6 +20,13 @@ namespace GD
 		int Œ»İUŒ‚—Í;
 		int Œ»İ¶–½—Í;
 		bool is‰ö‰ä;
+
+		/*“X‚É‚¢‚é‚Ì•`‰æˆ—*/
+		void DrawShop()
+		{
+
+		}
+
 	};
 	
 }

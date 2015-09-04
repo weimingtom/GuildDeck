@@ -14,8 +14,9 @@ namespace GD
 	class IQuest
 	{
 	public:
-		int Šú“ú;
-
+		EnemyType “Gí—Ş;
+		int c‚èŠú“ú;
+		int “G”;
 
 	};
 }

@@ -50,7 +50,8 @@ namespace GD
 	/*クエスト名*/
 	enum class QuestType
 	{
-
+		スライム,
+		ドラゴン,
 	};
 
 	/*戦闘での配置*/
